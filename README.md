@@ -1,74 +1,74 @@
-# Welcome to React Router!
+# React Router へようこそ！
 
-A modern, production-ready template for building full-stack React applications using React Router.
+React Routerを使用した本番環境対応のフルスタックReactアプリケーション構築用テンプレートです。
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+[![StackBlitzで開く](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
 
-## Features
+## 主な機能
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- 🚀 サーバーサイドレンダリング
+- ⚡️ ホットモジュールリプレイスメント（HMR）
+- 📦 アセットのバンドルと最適化
+- 🔄 データの読み込みと更新
+- 🔒 TypeScript標準搭載
+- 🎉 スタイリング用TailwindCSS
+- 📖 [React Router ドキュメント](https://reactrouter.com/)
 
-## Getting Started
+## はじめ方
 
-### Installation
+### インストール
 
-Install the dependencies:
+依存関係をインストールします：
 
 ```bash
 npm install
 ```
 
-### Development
+### 開発
 
-Start the development server with HMR:
+開発サーバーを起動します（HMR対応）：
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+アプリケーションは `http://localhost:5173` で利用可能になります。
 
-## Building for Production
+## 本番用ビルド
 
-Create a production build:
+本番環境用のビルドを作成：
 
 ```bash
 npm run build
 ```
 
-## Deployment
+## デプロイ
 
-### Docker Deployment
+### Dockerでのデプロイ
 
-This template includes three Dockerfiles optimized for different package managers:
+このテンプレートには、各パッケージマネージャー用に最適化された3つのDockerfileが含まれています：
 
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
+- `Dockerfile` - npm用
+- `Dockerfile.pnpm` - pnpm用
+- `Dockerfile.bun` - bun用
 
-To build and run using Docker:
+Dockerでビルドして実行：
 
 ```bash
-# For npm
+# npm の場合
 docker build -t my-app .
 
-# For pnpm
+# pnpm の場合
 docker build -f Dockerfile.pnpm -t my-app .
 
-# For bun
+# bun の場合
 docker build -f Dockerfile.bun -t my-app .
 
-# Run the container
+# コンテナの実行
 docker run -p 3000:3000 my-app
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
+コンテナ化されたアプリケーションは、以下を含むDockerをサポートする任意のプラットフォームにデプロイ可能です：
 
 - AWS ECS
 - Google Cloud Run
@@ -77,24 +77,24 @@ The containerized application can be deployed to any platform that supports Dock
 - Fly.io
 - Railway
 
-### DIY Deployment
+### 手動デプロイ
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+Node.jsアプリケーションのデプロイに慣れている場合、内蔵のアプリケーションサーバーは本番環境での使用に対応しています。
 
-Make sure to deploy the output of `npm run build`
+`npm run build` の出力をデプロイしてください：
 
 ```
 ├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
+├── package-lock.json (または pnpm-lock.yaml, bun.lockb)
 ├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+│   ├── client/    # 静的アセット
+│   └── server/    # サーバーサイドコード
 ```
 
-## Styling
+## スタイリング
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+このテンプレートには[Tailwind CSS](https://tailwindcss.com/)が初期設定済みで含まれています。お好みのCSSフレームワークを使用することも可能です。
 
 ---
 
-Built with ❤️ using React Router.
+React Routerで❤️を込めて作られています。
